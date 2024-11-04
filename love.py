@@ -3,13 +3,16 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    setiap langkah kecil yang kamu ambil akan membawamu lebih dekat
-    dengan impianmu. jika ada kegagalan, itu adalah kesempatan untuk belajar.
-    jangan biarkan apapun menghentikan semangatmu, karena kamu bisa menghadapi apa saja
-    percayalah pada dirimu, kamu punya kekuatan besar untuk mencapai hal-hal hebat.
+z    Penyesalan, yaah... kata yang sudah tidak asing lagi.
+    penyesalan muncul membuat diri berandai-andai,
+    jika saja waktu bisa diputar kembali,
+    namun itu hanyalah angan-angan semesta.
+
+    ADA YANG MENYESAL KARENA TAK MAMPU MEMANFAATKAN WAKTU DENGAN BAIK,
+    ADA YANG MENYESAL KARENA TIDAK MENGENAL AGAMA SEJAK KECIL.
     """
     for huruf in kalimat:
-        print(huruf,end='', flush=True)
+        print(huruf, end='', flush=True)
         time.sleep(0.10)  # Penundaan 0.10 detik per huruf
 
 def main():
@@ -19,6 +22,6 @@ def main():
             tampilkan_kalimat_kata_per_huruf()
             time.sleep(1)  # Penundaan 1 detik sebelum pengulangan berikutnya
             print('\n' + '-' * 40) # Pemisah antar pengulangan
-    
+
 # Memanggil fungsi main untuk menjalankan program
 main()
