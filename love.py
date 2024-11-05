@@ -3,24 +3,21 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-z    Penyesalan, yaah... kata yang sudah tidak asing lagi.
-    penyesalan muncul membuat diri berandai-andai,
-    jika saja waktu bisa diputar kembali,
-    namun itu hanyalah angan-angan semesta.
-
-    ADA YANG MENYESAL KARENA TAK MAMPU MEMANFAATKAN WAKTU DENGAN BAIK,
-    ADA YANG MENYESAL KARENA TIDAK MENGENAL AGAMA SEJAK KECIL.
+    Jangan menunggu waktu untuk berubah lebih baik
+    tetapi beruahlah menjadi lebih baik
+    selagi masih ada waktu.
     """
+
     for huruf in kalimat:
         print(huruf, end='', flush=True)
-        time.sleep(0.10)  # Penundaan 0.10 detik per huruf
+        time.sleep(0.10) # Penundaan 0.10 detik er huruf
 
 def main():
-    jumlah_ulang = 1 # set jumlah pengulangan kalimat
+    jumlah_ulang = 1 # set jumlah penglangan kalimat
     for i in range(jumlah_ulang):
 
             tampilkan_kalimat_kata_per_huruf()
-            time.sleep(1)  # Penundaan 1 detik sebelum pengulangan berikutnya
+            time.sleep(1) # Penundaan 1 detik sebelum pengulagan
             print('\n' + '-' * 40) # Pemisah antar pengulangan
 
 # Memanggil fungsi main untuk menjalankan program
