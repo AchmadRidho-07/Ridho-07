@@ -3,11 +3,11 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Persaan tersulit adalah ketika hatimu
+    Perasaan tersulit adalah ketika hatimu
     terikat oleh seseorang.
 
     dan kamu sadar, kamu tak dapat memilikinya
-    dan kamu pun tidak kuasa untuk menjauh darinya.
+    dan kamu pun tak kuasa untuk menjauh darinya.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
