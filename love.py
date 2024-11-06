@@ -3,16 +3,18 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Jangan menunggu waktu untuk berubah lebih baik
-    tetapi berubahlah menjadi lebih baik
-    selagi masih ada waktu.
+    Perasaan tersulit adalah ketika hatimu
+    terikat pada seseorang.
+    
+    kamu sadar bahwa kamu tidak dapat memilikinya,
+    dan kamu pun tidak kuasa untuk menjauh darinya
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
-        time.sleep(0.10) # Penundaan 0.10 detik per huruf
+        time.sleep(0.10) # penundaan 0.10 detik per huruf
 
 def main():
-    jumlah_ulang = 1 # set jumlah pengulangan kalimat
+    jumlah_ulang = 1 # set jumlah pengulangan
     for i in range(jumlah_ulang):
 
             tampilkan_kalimat_kata_per_huruf()
