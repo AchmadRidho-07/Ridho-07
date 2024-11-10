@@ -3,11 +3,8 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Perasaan tersulit adalah ketika hatimu
-    terikat oleh seseorang.
-
-    dan kamu sadar, kamu tak dapat memilikinya
-    dan kamu pun tak kuasa untuk menjauh darinya.
+    SEPI itu bukan ketika semuanya meninggalkanmu,
+    tapi ketika ALLAH tidak lagi ada dihatimu.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -21,5 +18,5 @@ def main():
             time.sleep(1) # Penundaan 1 detik sebelum pengulangan
             print('\n' + '-' * 40) # Pemisah antar pengulangan
 
-# Memanggil fungsi main untuk menjalankan program
+# Memanggil fungsi main untuk mejalankan program
 main()
