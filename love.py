@@ -3,9 +3,8 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Kamu berhasil mengisi kosongku,
-    kamu berhasil menenangkan kerasku,
-    namun, kamu gagal menjadi milikku.
+    kehidupan ini bukan tentang hubungan kamu dan dia,
+    tetapi tentang hubungan seorang hamba kepada tuhannya.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
