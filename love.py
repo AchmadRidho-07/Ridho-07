@@ -1,11 +1,11 @@
 import time
 
-def tampilkan_kalimat_kata_per_huruf():
+def tampilakn_kalimat_kata_per_huruf():
     kalimat = """
 
-    Setan tidak menang ketika kamu berbuat dosa,
-    tapi setan meraih kemenangan ketika kamu berfikir 
-    bahwa Allah tidak akan mengampuni.
+    Tuhan punya cara sendiri untuk menyatukan 
+    dan memisahkan, menjauhkan dan mendekatkan
+    dengan cara yang tidak pernah diduga.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -14,7 +14,7 @@ def tampilkan_kalimat_kata_per_huruf():
 def main():
     jumlah_ulang = 1 # set jumlah pengulangan kalimat
     for i in range(jumlah_ulang):
-        tampilkan_kalimat_kata_per_huruf()
+        tampilakn_kalimat_kata_per_huruf()
         time.sleep(1) # Penundaan 1 detik sebelum pengulangan
         print('\n' + '-' * 40) # Pemisah antar pengulangan
 
