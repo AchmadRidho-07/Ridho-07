@@ -3,16 +3,13 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Manusia tabiat dasarnya mencintai dirinya,
-    karena itu dia tidak melihat kecuali kebaikan
-    demi kebaikan pada dirinya.
+    Hidup ini sangat aneh.
 
-    tetapi... tabiat dasar manusia juga membenci
-    orang yang tidak menyukainya, karena itu 
-    dia tidak melihat kecuali keburukan keburukan
-    yang ada pada orang yang tidak menyukainya.
+    Kita datang tanpa membawa apa-apa,
+    lalu kita memperjuangkan segalanya,
+    lalu kita meninggalkan segalanya
+    dan pergi tanpa membawa apa apa.
     """
-
     for huruf in kalimat:
         print(huruf, end='', flush=True)
         time.sleep(0.05) # Penundaan 0.05 detik per huruf
