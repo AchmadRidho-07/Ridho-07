@@ -3,12 +3,11 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Hidup ini sangat aneh.
-
-    Kita datang tanpa membawa apa-apa,
-    lalu kita memperjuangkan segalanya,
-    lalu kita meninggalkan segalanya
-    dan pergi tanpa membawa apa apa.
+    Sesungguhnya bencana terhadapmu bukan untuk
+    menghancurkanmu, melainkan sesungguhnya 
+    akan mengujimu, mengesahkan kesempurnaan imanmu
+    dan menguatkan dasar kepercayaanmu dan
+    memberikan kabar baik ke dalam batinmu.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
