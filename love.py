@@ -3,12 +3,18 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Sesungguhnya bencana terhadapmu bukan untuk
-    menghancurkanmu, melainkan sesungguhnya 
-    akan mengujimu, mengesahkan kesempurnaan imanmu
-    dan menguatkan dasar kepercayaanmu dan
-    memberikan kabar baik ke dalam batinmu.
+    dari senja aku belajar,
+    seindah apapun cara berpamitan
+    kepergiannya tetap menyisakan kelam
+
+    sebaik apapun cara kita berpisah
+    kepergianmu tetap menjadi trauma mendalam
+
+    setiap perpisahan itu menyakitkan,
+    tidak peduli bagaimana pun caranya berpamitan.
+
     """
+
     for huruf in kalimat:
         print(huruf, end='', flush=True)
         time.sleep(0.05) # Penundaan 0.05 detik per huruf
@@ -22,3 +28,4 @@ def main():
 
 # Memanggil fungsi main untuk menjalankan program
 main()
+
