@@ -1,13 +1,15 @@
 import time
 
 def tampilkan_kalimat_kata_per_huruf():
-    kalimat= """
+    kalimat = """
 
-    Dia baik karena memang seharusnya
-    baik ke semua orang, jangan karena baik
-    dikira naksir terus naruh harapan.
-    
-    kalau gitu siapa yang salah?
+    Berdamailah dengan pikiranmu yang gaduh itu.
+    berbicaralah pada dirimmu saat ini bahwa,
+    tak mengapa bila esok tak baik-baik saja.
+
+    Berbanggalah pada dirimu sendiri,
+    yang selama ini sudah mau bertahan dengan
+    kegaduhan pikiran yang sengaja kamu lakukan.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -16,9 +18,9 @@ def tampilkan_kalimat_kata_per_huruf():
 def main():
     jumlah_ulang = 1 # set jumlah pengulangan kalimat
     for i in range(jumlah_ulang):
-        tampilkan_kalimat_kata_per_huruf()
-        time.sleep(1) # Penundaan 1 detik sebelum pengulangan
-        print('\n' + '-' * 40) # Pemisah antar pengulangan
+            tampilkan_kalimat_kata_per_huruf()
+            time.sleep(1) # Penundaan 1 detik sebelum pengulangan
+            print('\n' + '-' * 40) # Pemisah antar pengulangan
 
-# Memanggil fungsi main untuk menjalankan program
+# Memanggil fungsi main untuk menjalankan program 
 main()
