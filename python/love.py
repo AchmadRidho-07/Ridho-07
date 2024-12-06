@@ -3,18 +3,15 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Semua ada waktunya. semua ada masanya.
-    yakinlah pada waktunya nanti,
-    Allah pasti akan berikan yang terbaik.
-
-    Lakukanlah hal yang baik
-    berprasangkalah yang baik,
-    yakinlah Allah pasti akan 
-    memberikan yang terbaik.
+    Pada akhirnya semua akan berjalan
+    sendiri-sendiri, tidak ada
+    yang membantu mempertanggung
+    jawabkan seluruh perbuatan
+    kecuali diri sendiri.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
-        time.sleep(0.05) # Penundaan detik per huruf
+        time.sleep(0.05) # Penundaan 0.05 detik per huruf
 
 def main():
     jumlah_ulang = 1 # set jumlah pengulangan kalimat
@@ -23,5 +20,5 @@ def main():
         time.sleep(1) # Penundaan 1 detik sebelum pengulangan
         print('\n' + '-' * 40) # Pemisah antar pengulangan
 
-# Memanggil fungsi main untuk menjalankan program
+# Memanggil fungsi main unuk menjalankan program
 main()
