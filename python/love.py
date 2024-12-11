@@ -3,11 +3,12 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Dicintai oleh seseorang yang
-    mencintai kita dengan segala
-    kekurangannya kita, lebih berharga
-    daripada dicintai sepuluh orang
-    karena kehebatan kita.
+    Jika kamu mencari yang lebih baik,
+    kamu tidak akan menemukan apa-apa
+    nantinya.
+
+    Terkadang yang terbaik tumbuh bersama
+    bukan tersedia begitu saja.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
