@@ -3,11 +3,14 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Manusia itu ada 2
+    Kadang kita terlalu sibuk mencari apa yang hilang,
+    hingga lupa bersyukur atas apa yang masih kita miliki.
 
-    ~ Manusia yang baik
-    ~ manusia yang berproses menuju baik
+    Syukurilah sekecil apapun nikmat itu, karena disanalah
+    keberkahan hidupmu bermula.
+
     """
+
     for huruf in kalimat:
         print(huruf, end='', flush=True)
         time.sleep(0.05) # Penundaan 0.05 detik per huruf
