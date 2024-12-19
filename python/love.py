@@ -3,12 +3,12 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Gak semua galau itu tentang cinta
+    Psikologi mengatakan bahwa:
 
-    Ada anak laki-laki yang setiap harinya
-    mikirin gimana cara semua rencana 
-    di kepalanya bisa terwujud.
+    Orang yang paling tertekan dalam keluarga
+    bukanlah ayah ataupun ibu, tapi dia adalah
 
+    Anak perempuan satu-satunya.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -19,7 +19,7 @@ def main():
     for i in range(jumlah_ulang):
             tampilkan_kalimat_kata_per_huruf()
             time.sleep(1) # Penundaan sebelum pengulangan
-            print('\n' + '-' * 40) # Pemisah antar pengulangan
+            print('\n' + '-' * 40) # Pemisah antar kalimat
 
 # Memanggil fungsi main untuk menjalankan program
 main()
