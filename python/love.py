@@ -1,14 +1,11 @@
 import time
 
-def tampilkan_kalimat_kata_per_huruf():
+def tampilkan_kalinat_kata_per_huruf():
     kalimat = """
 
-    Psikologi mengatakan bahwa:
-
-    Orang yang paling tertekan dalam keluarga
-    bukanlah ayah ataupun ibu, tapi dia adalah
-
-    Anak perempuan satu-satunya.
+    Kebanyakan manusia ketika berdoa begitu yakin
+    bahwa tuhan maha mendengar, tetapi ketika bermaksiat
+    seakan lupa bahwa tuhan maha melihat.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -17,9 +14,9 @@ def tampilkan_kalimat_kata_per_huruf():
 def main():
     jumlah_ulang = 1 # set jumlah pengulangan
     for i in range(jumlah_ulang):
-            tampilkan_kalimat_kata_per_huruf()
+            tampilkan_kalinat_kata_per_huruf()
             time.sleep(1) # Penundaan sebelum pengulangan
-            print('\n' + '-' * 40) # Pemisah antar kalimat
+            print('\n' + '-' * 40) # Pemisah antar pengulangan
 
 # Memanggil fungsi main untuk menjalankan program
-main()
+main() 
