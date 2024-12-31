@@ -3,12 +3,17 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Rasa sakit itu ketika kamu merindukan seseorang 
-    untuk diajak bicara, kamu ingin tau keberadaanya,
-    kamu ingin menceriktakan hari-harimu kepadanya,
-    dan kemudian kamu mundur karena kamu merasa,
-    dia telah berubah, dan dia tidak mau lagi
-    mendengarkanmu.
+        TERIMA KASIH 2024
+
+    Terima kasih untuk baik dan buruknya
+    Terima kasih untuk senang dan sedihnya
+    Terima kasih untuk sakit dan kecewanya
+    Terima kasih untuk pelajaran dan pengalamannya
+
+    Yang telah memberi warna dalam perjalanan
+    hidupku, kini saatnya kututup bab itu
+    dan membuka lembaran baru
+    di tahun 2025
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -22,4 +27,4 @@ def main():
         print('\n' + '-' * 40) # Pemisah antar pengulangan
 
 # Memanggil fungsi main untuk menjalankan program
-main() 
+main()
