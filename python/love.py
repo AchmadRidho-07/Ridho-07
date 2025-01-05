@@ -3,18 +3,22 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-        TERIMA KASIH 2024
+    Aku bukan laki-laki yang pintar dalam
+    memahami cara berfikirmu, bukan juga laki-laki
+    yang hebat dalam memberi rasa nyaman, 
+    dan juga bukan laki-laki menyenangkan yang bisa
+    memberimu berbagai kejutan indah,
 
-    Terima kasih untuk baik dan buruknya
-    Terima kasih untuk senang dan sedihnya
-    Terima kasih untuk sakit dan kecewanya
-    Terima kasih untuk pelajaran dan pengalamannya
+    tapi jika kamu mengira selama ini aku tidak pernah
+    peduli denganmu, kamu salah, hal kecil yang terjadi
+    padamu saja aku selalu berfikir bagaimana cara
+    menyikapinya dengan baik.
 
-    Yang telah memberi warna dalam perjalanan
-    hidupku, kini saatnya kututup bab itu
-    dan membuka lembaran baru
-    di tahun 2025
+    aku selalu memperhatikanmu dengan cara yang mungkin
+    berbeda dari laki-laki pada umumnya, tapi percayalah
+    aku tulus melakukan segalanya untukmu.
     """
+
     for huruf in kalimat:
         print(huruf, end='', flush=True)
         time.sleep(0.05) # Penundaan 0.05 detik per huruf
@@ -23,8 +27,8 @@ def main():
     jumlah_ulang = 1 # set jumlah pengulangan kalimat
     for i in range(jumlah_ulang):
         tampilkan_kalimat_kata_per_huruf()
-        time.sleep(1) # Penundaan sebelum pengulangan
+        time.sleep(1) # Penundaan 1 detik sebelum pengulangan
         print('\n' + '-' * 40) # Pemisah antar pengulangan
 
-# Memanggil fungsi main untuk menjalankan program
+# Memanggil fungsi mainuntuk menjalankan program
 main()

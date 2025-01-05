@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    char ch = 'a';
+    char ch = 'z';
     if (std::isalpha(ch)) {
         std::cout << ch << " Adalah huruf." << std::endl;
     }
