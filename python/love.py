@@ -3,12 +3,10 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Segala sesuatu menunggu pada waktunya.
-
-    Tak ada mawar yang mekar sebelum waktunya,
-    matahari juga tidak terbit sebelum waktunya,
-    tunggu saja. Apa yang akan menjadi milikmu
-    pasti akan datang padamu.
+    Kehilangan seseorang memang sakit,
+    tapi memberikan seseorang kesempatan
+    beribu kali dan tidak ada perubahan 
+    itu jauh lebih sakit.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
