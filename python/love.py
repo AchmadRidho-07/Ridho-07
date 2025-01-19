@@ -3,14 +3,13 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    Kehilangan seseorang memang sakit,
-    tapi memberikan seseorang kesempatan
-    beribu kali dan tidak ada perubahan 
-    itu jauh lebih sakit.
+    Akhir dari sebuah penderitaan menghasilkan
+    jiwa yang kuat. tetapi, harus ditandai
+    oleh bekas luka yang hebat.
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
-        time.sleep(0.05) # Penundaan 0.05 detik per huruf
+        time.sleep(0.05) # Penunaan 0.05 detik per huruf
 
 def main():
     jumlah_ulang = 1 # set jumlah pengulangan kalimat
