@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efek Mengetik</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('vscode.jpg'); /* Ganti dengan path gambar Anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            flex-direction: column;
+        }
+        .container {
+            font-size: 24px;
+            overflow: hidden;
+        }
+        .typing {
+            border-right: 3px solid white;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div id="typing-container"></div>
+    
+    <script>
+        const texts = ["Halo, Selamat Datang!", "Ini adalah efek mengetik.", "Bisa menampilkan banyak teks.", "Teks ini akan berbaris ke bawah.", "Tidak ada batasan panjang teks."];
+        const container = document.getElementById("typing-container");
+        let index = 0;
+        
+        function typeText(lineIndex, charIndex) {
+            if (lineIndex < texts.length) {
+                if (charIndex < texts[lineIndex].length) {
+                    let lines = container.innerHTML.split("<br>");
+                    lines[lineIndex] = `<span class="typing">${texts[lineIndex].substring(0, charIndex + 1)}</span>`;
+                    container.innerHTML = lines.join("<br>");
+                    setTimeout(() => typeText(lineIndex, charIndex + 1), 100);
+                } else {
+                    container.innerHTML += "<br>";
+                    setTimeout(() => typeText(lineIndex + 1, 0), 500);
+                }
+            }
+        }
+        
+        container.innerHTML = "";
+        for (let i = 0; i < texts.length; i++) {
+            container.innerHTML += "<br>";
+        }
+        typeText(0, 0);
+    </script>
+</body>
+</html>
