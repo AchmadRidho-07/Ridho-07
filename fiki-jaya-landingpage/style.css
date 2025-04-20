@@ -1,14 +1,16 @@
 
 body {
+  background: linear-gradient(to right, yellow, green);
+  color: black; /* warna teks biar tetap kebaca */
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: yellow;
 }
 
 .navbar {
-  background-color: green;
+  background: linear-gradient(to right, green, yellow);
   color: yellow;
-  padding: 25px 20px;
+  padding: 50px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,10 +18,18 @@ body {
 }
 
 .navbar nav a {
-  color: yellow;
+  color: green;
   text-decoration: none;
   margin-left: 20px;
   font-weight: bold;
+}
+
+
+.navbar a:hover {
+  background-color: green;
+  color: yellow;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
 }
 
 .hero {
@@ -35,12 +45,12 @@ body {
   max-width: 65%;
   height: 80%;
   margin-top: 10px;
-  border: 5px solid black;
+  border: 5px solid green;
 }
 
 .layanan {
   padding: 30px 20px;
-  background-color: #ffff00;
+  background: linear-gradient(to right, green, yellow);
   text-align: center;
 }
 
@@ -54,8 +64,8 @@ body {
 .card {
   background-color: white;
   padding: 10px;
-  border: 2px solid green;
-  width: 250px;
+  border: 5px solid green;
+  width: 300px;
 }
 
 .card img {
@@ -73,10 +83,15 @@ body {
   font-weight: bold;
 }
 
+.btn:hover:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
 .testimoni {
-  background-color: green;
+  background: linear-gradient(to right, yellow, green);
   color: black;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -90,8 +105,9 @@ body {
 .testi {
   background-color: limegreen;
   padding: 15px;
-  border-radius: 10px;
-  width: 200px;
+  border-radius: 20px;
+  width: 300px;
+  border: 5px solid #ffff00;
 }
 
 .testi img {
@@ -100,41 +116,103 @@ body {
 }
 
 .formulir {
-  padding: 20px;
-  background-color: #ffff00;
-  text-align: center;
+  background: linear-gradient(to right, green, yellow);
+  padding: 40px;
 }
 
-.formulir input,
-.formulir textarea {
-  background-color: white;
-  text-emphasis-color: black;
-  width: 80%;
+.form-container {
+  display: flex;
+  justify-content: flex-start; /* biar semuanya mulai dari kiri */
+  align-items: flex-start;
+  gap: 100px; /* jarak antara form dan gambar */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 2; /* biar lebih panjang ke kanan */
+  max-width: 800px; /* form lebih lebar */
+}
+
+input, textarea {
   padding: 10px;
-  margin: 10px 0;
+  border: 1px solid black;
+  font-size: 16px;
+  width: 100%;
 }
 
-.formulir button {
+button {
   background-color: red;
   color: white;
-  padding: 10px 30px;
+  padding: 10px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 120px;
 }
+
+button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.form-image {
+  display: inline-block;
+  padding: none; /* Jarak antara gambar dan bingkai */
+  border: 5px solid green; /* Bingkai warna hijau */
+  border-radius: 20px; /* Sudut membulat */
+  box-sizing: border-box;
+  background-color: white; /* Opsional, biar kontras */
+}
+
+.form-image img {
+  display: block;
+  width: 250px; /* Atur sesuai kebutuhan */
+  height: auto;
+  border-radius: 15px; /* Ikuti bentuk gambar agar menyatu */
+}
+
 
 .terima-kasih {
-  margin-top: 20px;
-  color: red;
+  margin-top: 5px;
+  color:black;
   font-weight: bold;
-}
-
-.footer {
-  background-color: green;
-  color: #ffff00;
-  padding: 15px;
   text-align: center;
 }
 
-.sosmed img {
-  margin: 0 5px;
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(to right, green, yellow);
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.Footer-text {
+  flex: 1;
+  min-width: 250px;
+  color: #ffff00;
+}
+
+.Footer-images {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  min-width: 250px;
+}
+
+.Footer-images img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.Footer-images a:hover img {
+  transform: scale(1.2);
+}
+
+
