@@ -1,0 +1,140 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: yellow;
+}
+
+.navbar {
+  background-color: green;
+  color: yellow;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: yellow;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text {
+  padding: 10px;
+}
+
+.hero img {
+  max-width: 65%;
+  height: 80%;
+  margin-top: 10px;
+  border: 5px solid black;
+}
+
+.layanan {
+  padding: 30px 20px;
+  background-color: #ffff00;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid green;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.testimoni {
+  background-color: green;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.testi-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.testi {
+  background-color: limegreen;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.testi img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.formulir {
+  padding: 20px;
+  background-color: #ffff00;
+  text-align: center;
+}
+
+.formulir input,
+.formulir textarea {
+  background-color: white;
+  text-emphasis-color: black;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.formulir button {
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  font-weight: bold;
+}
+
+.terima-kasih {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: green;
+  color: #ffff00;
+  padding: 15px;
+  text-align: center;
+}
+
+.sosmed img {
+  margin: 0 5px;
+}
