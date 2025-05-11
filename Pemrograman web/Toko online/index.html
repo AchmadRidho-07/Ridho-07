@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JejakSporty | Toko Sepatu Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+  border-bottom: 2px solid white;
+}
+
+
+   .hero {
+  position: relative;
+  background: url('orang.png') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+    
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card {
+  border: 2px solid #8a8a8a; 
+  border-radius: 8px;     
+  overflow: hidden;       
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+    }
+
+    .harga-produk {
+  color: #28a745; 
+  font-weight: bold;
+  font-size: 1.1rem;
+    }
+
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+  <img src="logo.jpg" alt="Logo JejakSporty" width="30" height="30">
+  <span>JejakSporty</span>
+</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="Beranda">
+    <div class="container">
+      <h1>Jejak Baru, Gaya Baru</h1>
+      <p class="lead">Temukan sepatu terbaik untuk setiap jejakmu.</p>
+      <p class="lead">Selamat datang di Langkahku, destinasi terbaik untuk menemukan sepatu yang bukan hanya nyaman dipakai, tapi juga penuh gaya.
+
+ kami hadir dengan koleksi sepatu berkualitas tinggi yang dirancang untuk mendukung aktivitasmu — mulai dari rutinitas harian hingga momen istimewa.
+
+Temukan berbagai model, warna, dan gaya yang cocok untuk kamu. Mulai perjalanan barumu hari ini bersama JejakSporty – karena setiap jejak itu berarti.</p>
+      
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section class="py-5" id="produk">
+    <div class="container">
+      <h2 class="text-center mb-4">Koleksi Sepatu </h2>
+      <div class="row g-4">
+        <!-- Produk 1 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 1.jpg" class="card-img-top" alt="Sepatu 1">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Sport Pria</h5>
+              <p class="card-text">Nyaman dan stylish untuk aktivitas harian.</p>
+               <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+             
+            </div>
+          </div>
+        </div>
+        <!-- Produk 2 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 2.jpg" class="card-img-top" alt="Sepatu 2">
+            <div class="card-body">
+              <h5 class="card-title">Sneakers Pria</h5>
+              <p class="card-text">Tampil kasual dengan sentuhan elegan.</p>
+              <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+        <!-- Produk 3 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 9.jpg" class="card-img-top" alt="Sepatu 3">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Ortuseight</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+               <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+         <!-- Produk 4 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 4.jpg" class="card-img-top" alt="Sepatu 4">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Reebok</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+               <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+         <!-- Produk 5 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 5.jpg" class="card-img-top" alt="Sepatu 5">
+            <div class="card-body">
+              <h5 class="card-title">Sneakers Wanita</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+            <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+          <!-- Produk 6 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 6.jpg" class="card-img-top" alt="Sepatu 6">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Asics</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+             <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+          <!-- Produk 7 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 7.jpg" class="card-img-top" alt="Sepatu 7">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Nike</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+              <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+          <!-- Produk 8 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 8.jpg" class="card-img-top" alt="Sepatu 8">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Mizuno</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+               <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+
+          <!-- Produk 9 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="sepatu 3.jpg" class="card-img-top" alt="Sepatu 9">
+            <div class="card-body">
+              <h5 class="card-title">Sepatu Altra</h5>
+              <p class="card-text">Sempurna untuk acara penting dan kantor.</p>
+               <p class="card-text harga-produk">Rp. 3.500.000</p>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section class="py-5 bg-light" id="tentang">
+    <div class="container text-center">
+      <h2>Tentang JejakSporty</h2>
+      <p>JejakSporty telah berdiri sejak 11 mei 2025. JejakSporty adalah toko sepatu online lokal yang  dibuat untuk tugas web pemrograman. JejakSporty dibuat menggunakan html, css & bootstrap menyediakan beragam sepatu berkualitas dengan harga terjangkau. Kami percaya setiap jejakmu harus penuh gaya dan nyaman.</p>
+    </div>
+  </section>
+
+ <!-- Kontak -->
+<section class="py-5" id="kontak">
+  <div class="container">
+    <h2 class="text-center mb-4">Hubungi Kami</h2>
+    <div class="row align-items-center">
+      
+      <!-- Kolom Gambar Google Maps -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        
+         <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.308037274324!2d106.826833!3d-6.325104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f30dc74fba89%3A0x5d0f23043d44175!2sLenteng%20Agung%2C%20Kec.%20Jagakarsa%2C%20Kota%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1715400000000"
+  width="100%" height="300"
+  style="border: 3px solid rgb(92, 92, 92); border-radius: 8px;"
+  allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+        </iframe>
+      </div>
+
+      <!-- Kolom Informasi Kontak -->
+      <div class="col-md-6 text-center text-md-start">
+        <p><strong>Email</strong>: JejakSporty@gmail.com</p>
+        <p><strong>Instagram</strong>: @JejakSporty</p>
+        <p><strong>TikTok</strong>: @JejakSporty</p>
+        <p><strong>WhatsApp</strong>: 0813-6533-0295</p>
+        <p><strong>Lokasi</strong>: Lenteng Agung, Kec. Jagakarsa, Kota Jakarta Selatan, DKI Jakarta 12610</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 Langkahku. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
