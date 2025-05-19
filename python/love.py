@@ -3,9 +3,10 @@ import time
 def tampilkan_kalimat_kata_per_huruf():
     kalimat = """
 
-    berbahagialah dengan ilmu, niscaya dengan ilmu
-    kau akan hidup selama-lamanya, manusia akan mati
-    sedangkan ahli ilmu tetaplah hidup.
+    Akan datang masanya dimana kamu 
+    dirayakan dan dicintai dengan hebat 
+    oleh seseorang yang bersyukur  memilikimu.
+
     """
     for huruf in kalimat:
         print(huruf, end='', flush=True)
@@ -18,5 +19,5 @@ def main():
         time.sleep(1) # Penundaan sebelum pengulangan
         print('\n' + '-' * 40) # Pengulangan kalimat
 
-# memanggil fungsi main untk menjalankan program
+# Memanggil fungsi main untuk menjalankan program
 main()
