@@ -8,8 +8,8 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(to right, green, yellow);
-  color: yellow;
+  background: green;
+  color: rgb(252, 252, 251);
   padding: 50px 50px;
   display: flex;
   justify-content: space-between;
