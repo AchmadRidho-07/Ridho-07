@@ -1,0 +1,86 @@
+.banner {
+  background: url("airc.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff;
+}
+
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 30px;
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #cccccc;
+}
+
+a.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 40px;
+}
+
+.client img {
+  height: 80px;
+  object-fit: contain;
+}
+
+
+.hubungi-kami {
+  background-color: #fff; 
+}
+
+.hubungi-kami h2 {
+  font-weight: 700;
+}
+
+.hubungi-kami ul li {
+  margin-bottom: 10px;
+}
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .footer-custom {
+    background-color: #198754; /* Hijau Bootstrap (bg-success) */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+  }
+
+
